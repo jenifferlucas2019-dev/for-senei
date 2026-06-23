@@ -1,32 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Relatório de Sprint</title>
+    <title>Relatório de Sprint - Bugs</title>
 </head>
 <body>
-    <h2>Relatório da Sprint</h2>
-    <div id="resultado"></div>
+
+    <button onclick="gerarRelatorio()">Gerar Relatório</button>
+    <br><br>
+
+    <textarea id="relatorio" rows="15" cols="50"></textarea>
 
     <script>
-        let dias = Number(prompt("Quantos dias possui a Sprint?"));
-        let totalTarefas = 0;
-        let resultado = document.getElementById("resultado");
+        function gerarRelatorio() {
+            let dias = Number(prompt("Quantos dias teve a Sprint?"));
 
-        for (let i = 1; i <= dias; i++) {
-            let tarefas = Number(prompt("Quantas tarefas foram concluídas no dia " + i + "?"));
+            let totalBugs = 0;
+            let maiorBugs = -1;
+            let menorBugs = Infinity;
+            let diaMaior = 0;
+            let diaMenor = 0;
 
-            totalTarefas += tarefas;
+            let texto = "RELATÓRIO DA SPRINT\n\n";
 
-            resultado.innerHTML += `
-                <p>Dia ${i}: ${tarefas} tarefas concluídas</p>
-            `;
+            for (let i = 1; i <= dias; i++) {
+                let bugs = Number(prompt("Quantos bugs foram encontrados no dia " + i + "?"));
+
+                texto += "Dia " + i + ": " + bugs + " bugs\n";
+
+                totalBugs += bugs;
+
+                if (bugs > maiorBugs) {
+                    maiorBugs = bugs;
+                    diaMaior = i;
+                }
+
+                if (bugs < menorBugs) {
+                    menorBugs = bugs;
+                    diaMenor = i;
+                }
+            }
+
+            let media = totalBugs / dias;
+
+            texto += "\nTotal de bugs: " + totalBugs;
+            texto += "\nMédia de bugs por dia: " + media.toFixed(2);
+            texto += "\nDia com mais bugs: Dia " + diaMaior + " (" + maiorBugs + " bugs)";
+            texto += "\nDia com menos bugs: Dia " + diaMenor + " (" + menorBugs + " bugs)";
+
+            document.getElementById("relatorio").value = texto;
         }
-
-        resultado.innerHTML += `
-            <hr>
-            <h3>Total de tarefas concluídas na Sprint: ${totalTarefas}</h3>
-        `;
     </script>
+
 </body>
 </html>
