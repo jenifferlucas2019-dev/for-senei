@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relatório de Bugs</title>
+</head>
+<body>
+
+    <button onclick="gerarRelatorio()">Gerar Relatório</button>
+    <br><br>
+
+    <textarea id="relatorio" rows="15" cols="50"></textarea>
+
+    <script>
+        function gerarRelatorio() {
+
+            let dias = Number(prompt("Quantos dias teve a Sprint?"));
+
+            let totalBugs = 0;
+            let maiorBug = -1;
+            let menorBug = Infinity;
+            let diaMaior = 0;
+            let diaMenor = 0;
+            let relatorio = "";
+
+            for (let i = 1; i <= dias; i++) {
+
+                let bugs = Number(prompt("Quantos bugs foram encontrados no dia " + i + "?"));
+
+                relatorio += "Dia " + i + ": " + bugs + " bugs\n";
+
+                totalBugs += bugs;
+
+                if (bugs > maiorBug) {
+                    maiorBug = bugs;
+                    diaMaior = i;
+                }
+
+                if (bugs < menorBug) {
+                    menorBug = bugs;
+                    diaMenor = i;
+                }
+            }
+
+            let media = totalBugs / dias;
+
+            relatorio += "\nTotal de bugs: " + totalBugs;
+            relatorio += "\nMédia de bugs por dia: " + media.toFixed(2);
+            relatorio += "\nDia com mais bugs: Dia " + diaMaior + " (" + maiorBug + " bugs)";
+            relatorio += "\nDia com menos bugs: Dia " + diaMenor + " (" + menorBug + " bugs)";
+
+            document.getElementById("relatorio").value = relatorio;
+        }
+    </script>
+
+</body>
+</html>
