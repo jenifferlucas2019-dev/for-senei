@@ -1,0 +1,116 @@
+Utilize um for para calcular a soma dos números de 1 até 10 e exiba o resultado
+// let soma = 0 ;
+// for(let i = 1; i<=10;i++){
+//     soma += i;
+//     console.log(soma);
+// }
+//  console.log("a soma total é")
+
+ //Crie um programa que mostre a tabuada do número 5, de 5 × 1 até 5 × 10,
+// let tabuada = 5;
+// for(let i=1;i<=10;i++){
+// let resultado = i*tabuada
+//  console.log(resultado)   
+// }
+// 2*2
+// i*tabuada
+
+//Utilize um for para mostrar o quadrado dos números de 1 até 10.
+// let numero = 10;
+// for (let i = 1; i <= numero; i++) {
+//     let quadrado = i * i;
+//     console.log(quadrado);
+// }
+
+//Considere a palavra “JavaScript”. Utilize um for para exibir cada letra da
+//palavra em uma linha diferente.
+// let palavra = "JavaScript";
+
+// for (let i = 0; i < palavra.length; i++) {
+//     console.log(palavra[i]);
+// }
+
+//Utilize um for para mostrar todos os múltiplos de 3 entre 1 e 30
+// for (let i = 1; i <= 30; i++) {
+//     if (i % 3 === 0) {
+//         console.log(i);
+//     }
+// }
+
+//Utilize um for para imprimir 10 asteriscos, um de cada vez, na mesma linha.
+// let resultado = "";
+
+// for (let i = 0; i < 10; i++) {
+//     resultado += "*";
+// }
+// console.log(resultado);
+
+//Utilize um for para calcular a soma dos números pares entre 1 e 20.
+// let soma = 0;
+// for (let i = 1; i <= 20; i++) {
+//     if (i % 2 == 0) {
+//         soma += i;
+//     }
+// }
+// console.log(soma);
+
+//Utilize um for para mostrar os números de 0 até 50, contando de 5 em 5.
+// let mostrar = 0 ;
+// for(let i = 0; i<=10;i++){
+// mostrar = i*5
+// console.log(mostrar);
+// }
+
+//Utilize um for para calcular a soma dos números pares entre 1 e 20.
+// let soma = 0;
+
+// for (let i = 2; i <= 20; i += 2) {
+//     soma += i;
+// }
+
+// console.log("A soma dos números pares entre 1 e 20 é:", soma);
+
+//Utilize um for para mostrar os números de 0 até 50, contando de 5 em 5.
+// for (let i = 0; i <= 50; i += 5) {
+//     console.log(i);
+// }
+
+//Utilize um for para imprimir a palavra "Olá!" exatamente 8 vezes.
+// for (let i = 1; i <= 8; i++) {
+//     console.log("Olá!");
+// }
+
+// Calcule a soma de todos os números ímpares entre 1 e 15 utilizando um for
+// let soma = 0;
+
+// for (let i = 1; i <= 15; i += 2) {
+//     soma += i;
+// }
+
+// console.log(soma);
+
+
+// . Utilize um for para exibir a sequência: 1, 12, 123, 1234, 12345
+// const numeros = ["1", "12", "123", "1234", "12345"];
+// for(let i = 0; i < numeros.length;i++)
+//     console.log(numeros[i])
+
+//Utilize um for para calcular o fatorial de 5.
+// let n = 5
+// for(let i = 4; i > 1; i--){
+//     n *= i
+// }
+// console.log(n)
+//Utilize um for para contar quantas letras "o" existem em uma palavra
+//qualquer.
+// let palavra = "computador";
+// let contador = 0;
+
+// for (let i = 0; i < palavra.length; i++) {
+//     if (palavra[i] === "o") {
+//         contador++;
+//     }
+// }
+// console.log("Quantidade de letras 'o':", contador);
+
+
