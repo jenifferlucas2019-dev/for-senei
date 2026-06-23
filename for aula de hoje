@@ -1,0 +1,55 @@
+/Utilize um for para calcular a soma dos números de 1 até 10 e exiba o resultado
+// let soma = 0 ;
+// for(let i = 1; i<=10;i++){
+//     soma += i;
+//     console.log(soma);
+// }
+//  console.log("a soma total é")
+
+ //Crie um programa que mostre a tabuada do número 5, de 5 × 1 até 5 × 10,
+// let tabuada = 5;
+// for(let i=1;i<=10;i++){
+// let resultado = i*tabuada
+//  console.log(resultado)   
+// }
+// 2*2
+// i*tabuada
+
+//Utilize um for para mostrar o quadrado dos números de 1 até 10.
+// let numero = 10;
+// for (let i = 1; i <= numero; i++) {
+//     let quadrado = i * i;
+//     console.log(quadrado);
+// }
+
+//Considere a palavra “JavaScript”. Utilize um for para exibir cada letra da
+//palavra em uma linha diferente.
+// let palavra = "JavaScript";
+
+// for (let i = 0; i < palavra.length; i++) {
+//     console.log(palavra[i]);
+// }
+
+//Utilize um for para mostrar todos os múltiplos de 3 entre 1 e 30
+// for (let i = 1; i <= 30; i++) {
+//     if (i % 3 === 0) {
+//         console.log(i);
+//     }
+// }
+
+//Utilize um for para imprimir 10 asteriscos, um de cada vez, na mesma linha.
+// let resultado = "";
+
+// for (let i = 0; i < 10; i++) {
+//     resultado += "*";
+// }
+// console.log(resultado);
+
+//Utilize um for para calcular a soma dos números pares entre 1 e 20.
+// let soma = 0;
+// for (let i = 1; i <= 20; i++) {
+//     if (i % 2 == 0) {
+//         soma += i;
+//     }
+// }
+// console.log(soma);
