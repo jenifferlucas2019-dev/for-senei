@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório de Sprint</title>
+</head>
+<body>
+    <h2>Relatório da Sprint</h2>
+    <div id="resultado"></div>
+
+    <script>
+        let dias = Number(prompt("Quantos dias possui a Sprint?"));
+        let totalTarefas = 0;
+        let resultado = document.getElementById("resultado");
+
+        for (let i = 1; i <= dias; i++) {
+            let tarefas = Number(prompt("Quantas tarefas foram concluídas no dia " + i + "?"));
+
+            totalTarefas += tarefas;
+
+            resultado.innerHTML += `
+                <p>Dia ${i}: ${tarefas} tarefas concluídas</p>
+            `;
+        }
+
+        resultado.innerHTML += `
+            <hr>
+            <h3>Total de tarefas concluídas na Sprint: ${totalTarefas}</h3>
+        `;
+    </script>
+</body>
+</html>
