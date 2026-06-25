@@ -1,0 +1,18 @@
+function gerarRelatorio() {
+    let dias = Number(prompt("Quantos dias possui a Sprint?"));
+    let total = 0;
+    let resultado = "";
+
+    for (let i = 1; i <= dias; i++) {
+        let tarefas = Number(prompt("Quantas tarefas foram concluídas no dia " + i + "?"));
+
+        resultado += "<p>Dia " + i + ": " + tarefas + " tarefas concluídas.</p>";
+
+        total += tarefas;
+    }
+
+    resultado += "<hr>";
+    resultado += "<h3>Total de tarefas concluídas: " + total + "</h3>";
+
+    document.getElementById("resultado").innerHTML = resultado;
+}
