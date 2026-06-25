@@ -1,0 +1,83 @@
+ 1Soma dos números de 1 até 10
+let soma = 0;
+
+for (let i = 1; i <= 10; i++) {
+    soma += i;
+}
+
+console.log(soma);
+
+2 Tabuada do número 5
+for (let i = 1; i <= 10; i++) {
+    console.log(`5 x ${i} = ${5 * i}`);
+}
+
+3Quadrado dos números de 1 até 10
+for (let i = 1; i <= 10; i++) {
+    console.log(i * i);
+}
+
+3Exibir cada letra da palavra "JavaScript"
+let palavra = "JavaScript";
+
+for (let i = 0; i < palavra.length; i++) {
+    console.log(palavra[i]);
+}
+
+4Imprimir 10 asteriscos na mesma linha
+let texto = "";
+
+for (let i = 1; i <= 10; i++) {
+    texto += "*";
+}
+
+console.log(texto);
+
+5Números de 0 até 50, de 5 em 5
+for (let i = 0; i <= 50; i += 5) {
+    console.log(i);
+}
+
+6Imprimir "Olá!" 8 vezes
+for (let i = 1; i <= 8; i++) {
+    console.log("Olá!");
+}
+
+7Soma dos números ímpares entre 1 e 15
+let soma = 0;
+
+for (let i = 1; i <= 15; i += 2) {
+    soma += i;
+}
+
+console.log(soma);
+
+8. Exibir a sequência: 1, 12, 123, 1234, 12345
+let texto = "";
+
+for (let i = 1; i <= 5; i++) {
+    texto += i;
+    console.log(texto);
+}
+
+9Fatorial de 5
+let fatorial = 1;
+
+for (let i = 1; i <= 5; i++) {
+    fatorial *= i;
+}
+
+console.log(fatorial);
+
+10Contar quantas letras "o" existem em uma palavra
+let palavra = "computador";
+let contador = 0;
+
+for (let i = 0; i < palavra.length; i++) {
+    if (palavra[i] === "o") {
+        contador++;
+    }
+}
+
+console.log(contador); 
+
